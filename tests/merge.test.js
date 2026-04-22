@@ -1,4 +1,7 @@
 import { mergeSort } from "../src/merge";
+const array = [1]
+array.pop();
+console.log(array[0] ?? "a")
 
 describe("merge sort", () => {
   test("should return empty array", () => {

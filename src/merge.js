@@ -16,8 +16,9 @@ export function mergeSort(array) {
       break;
     }
 
-    if (leftSide[0] < rightSide[0]) sortedArray.push(leftSide.shift());
-    else sortedArray.push(rightSide.shift());
+    leftSide[0] < rightSide[0]
+      ? sortedArray.push(leftSide.shift())
+      : sortedArray.push(rightSide.shift());
   }
 
   return sortedArray;
